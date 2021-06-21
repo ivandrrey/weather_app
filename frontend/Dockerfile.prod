@@ -1,0 +1,7 @@
+FROM nginx:alpine
+WORKDIR /var/www
+COPY ./conf /etc/nginx/
+COPY ./public /var/www
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["sh", "/entrypoint.sh"]
