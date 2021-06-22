@@ -19,10 +19,10 @@ To make test db data:
   Open backend container: docker exec -it container_name /bin/bash
 
   Run: 
-    python manage.py shell
-    import init_db_data
-    init_db_data.generate_data()
+   1) python manage.py shell
+   2) import init_db_data
+   3) init_db_data.generate_data()
    
- Use app. You are breathtaking!
+Use app. You are breathtaking!
   
 
