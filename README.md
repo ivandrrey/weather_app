@@ -17,6 +17,9 @@ Up all containers:
 To make test db data: 
   
   Open backend container: docker exec -it container_name /bin/bash
+  
+  In first time after build db RUN:
+    python manage.py migrate
 
   Run: 
    1) python manage.py shell
